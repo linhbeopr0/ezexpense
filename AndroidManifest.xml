@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mcexpense"
+    android:versionCode="2"
+    android:versionName="Expense 1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_launcher"
+        android:label="Expense 1.0"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.sanmboiboi.activity.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.sanmboiboi.activity.AddPersonActivity" >
+        </activity>
+        <activity android:name="com.sanmboiboi.activity.ShowReportActivity" >
+        </activity>
+        <activity android:name="com.sanmboiboi.activity.AddExpenseActivity" >
+        </activity>
+        <activity android:name="com.sanmboiboi.activity.ListCategoryActivity" >
+        </activity>
+        <activity android:name="com.sanmboiboi.activity.ListPersonActivity" >
+        </activity>
+    </application>
+
+</manifest>
